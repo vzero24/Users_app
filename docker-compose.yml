@@ -4,11 +4,9 @@ services:
   db:
     image: mysql:5.7
     environment:
-      MYSQL_ROOT_PASSWORD: root_password
-      MYSQL_DATABASE: users_app
-      MYSQL_USER: root
-      MYSQL_PASSWORD: ''
-      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_ROOT_PASSWORD: root_password  # Set the root password here
+      MYSQL_DATABASE: users_app           # Optional: Create a database on startup
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"   # Allow empty password for root (not recommended for production)
     ports:
       - "3306:3306"
     volumes:
