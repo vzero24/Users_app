@@ -1,6 +1,6 @@
 <?php
-include_once('db.php'); // Include the database connection file
 session_start(); // Start a new session or resume the existing one
+include_once('db.php'); // Include the database connection file
 
 $action = false; // Initialize action variable to track the type of operation performed
 
